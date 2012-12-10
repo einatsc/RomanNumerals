@@ -5,6 +5,13 @@ public class RomanNumerals {
 	{
 		String value="";
 		
+		if (number > 499)
+		{
+			value = value + "D";
+			number = number - 500;
+		}
+
+		
 		if (number > 399)
 		{
 			value = value + "CD";
