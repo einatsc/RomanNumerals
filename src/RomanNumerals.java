@@ -4,6 +4,26 @@ public class RomanNumerals {
 	public String toRoman(int number)
 	{
 		String value="";
+		
+		
+		while (number > 9)
+		{
+			value = value + "X";
+			number = number - 10;
+		}
+
+		if (number > 8)
+		{
+			value = value + "IX";
+			number = number - 9;
+		}
+
+		if (number > 4)
+		{
+			value = value + "V";
+			number = number - 5;
+		}
+		
 		if (number > 3) 
 		{
 			value = value + "IV";
