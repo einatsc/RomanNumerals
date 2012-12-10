@@ -22,6 +22,8 @@ public class RomanNumeralUnitTests {
 		assertEquals("DX", number.toRoman(510));
 		assertEquals("CMXC", number.toRoman(990));
 		assertEquals("M", number.toRoman(1000));
+		assertEquals("N/A", number.toRoman(0));
+		assertEquals("N/A", number.toRoman(4000));
 	}
 	
 
