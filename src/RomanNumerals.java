@@ -5,6 +5,18 @@ public class RomanNumerals {
 	{
 		String value="";
 		
+		while (number > 999)
+		{
+			value = value + "M";	// Concatenate the letters to the right side
+			number = number - 1000;	// Reduce the amount left in number
+		}
+		
+		if (number > 899)
+		{
+			value = value + "CM";	// Concatenate letters to the right side
+			number = number - 900;
+		}
+		
 		if (number > 499)
 		{
 			value = value + "D";
