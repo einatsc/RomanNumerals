@@ -11,7 +11,6 @@ public class RomanNumerals {
 			number = number - 500;
 		}
 
-		
 		if (number > 399)
 		{
 			value = value + "CD";
