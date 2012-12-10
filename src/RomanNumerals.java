@@ -5,6 +5,24 @@ public class RomanNumerals {
 	{
 		String value="";
 		
+		if (number > 399)
+		{
+			value = value + "CD";
+			number = number - 400;
+		}
+
+		while (number > 99)
+		{
+			value = value + "C";
+			number = number - 100;
+		}
+
+		if (number > 89) 
+		{
+			value = value + "XC";
+			number = number - 90;
+		}
+		
 		if (number > 49)
 		{
 			value = value + "L";
