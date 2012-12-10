@@ -5,6 +5,11 @@ public class RomanNumerals {
 	{
 		String value="";
 		
+		if (number > 49)
+		{
+			value = value + "L";
+			number = number - 50;
+		}
 		
 		if (number > 39)
 		{
