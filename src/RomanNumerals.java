@@ -6,6 +6,11 @@ public class RomanNumerals {
 		String value="";
 		
 		
+		if (number > 39)
+		{
+			value = value + "XL";
+			number = number - 40;
+		}
 		while (number > 9)
 		{
 			value = value + "X";
