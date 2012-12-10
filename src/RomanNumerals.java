@@ -5,6 +5,11 @@ public class RomanNumerals {
 	{
 		String value="";
 		
+		if ( (number > 3999) || (number < 1) )
+		{
+			return "N/A";
+		}
+		
 		while (number > 999)
 		{
 			value = value + "M";	// Concatenate the letters to the right side
